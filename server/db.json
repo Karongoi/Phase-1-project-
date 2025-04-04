@@ -2,19 +2,21 @@
     "properties": [
       {
         "id": 1,
-        "name": "Cozy Apartment",
-        "image": "https://via.placeholder.com/150",
-        "location": "New York, NY",
-        "price": "$1200/month",
-        "isFavorite": false
+        "name": "Sunny Apartment",
+        "location": "Lagos" 
+        ,"price": 1200,
+        "bedrooms": 2,
+        "bathrooms": 1,
+        "image": "/assets/surbub-house.jpeg"
       },
       {
         "id": 2,
-        "name": "Luxury Condo",
-        "image": "https://via.placeholder.com/150",
-        "location": "Los Angeles, CA",
-        "price": "$2500/month",
-        "isFavorite": false
+        "name": "Cozy Studio",
+        "location": "Abuja",
+        "price": 800,
+        "bedrooms": 1,
+        "bathrooms": 1,
+        "image": "/assets/dillon-kydd-2keCPb73aQY-unsplash.jpg"
       }
     ]
   }
