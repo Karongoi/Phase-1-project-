@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    background: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+  #search {
+    padding: 0.5rem;
+    width: 50%;
+    margin-top: 1rem;
+  }
+  #property-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
+  }
+  .property {
+    border: 1px solid #ddd;
+    margin: 1rem;
+    padding: 1rem;
+    width: 300px;
+  }
+  .property img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
