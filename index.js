@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     // Fetch properties from API
     async function fetchProperties() {
       try {
-        const response = await fetch('http://localhost:8080/properties');
+        const response = await fetch('htthttps://phase-1-project-g0v6.onrender.com/properties');
         if (!response.ok) throw new Error('Failed to fetch properties');
         properties = await response.json();
         renderProperties(properties);
