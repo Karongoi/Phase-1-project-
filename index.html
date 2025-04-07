@@ -2,18 +2,38 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Rental House Finder</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <header>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
     <h1>Rental House Finder</h1>
-    <input type="text" id="search" placeholder="Search by location..." />
+    <button id="dark-mode-toggle">Toggle Dark Mode</button>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <h2>Find Your Next Rental Home</h2>
+    <p>Browse available listings and get your dream place today</p>
   </header>
 
-  <main id="property-list"></main>
+  <!-- Search Bar -->
+  <section class="search-bar">
+    <input type="text" id="search" placeholder="Search by city or title...">
+  </section>
 
-  <script src="script.js"></script>
+  <!-- Main Listings Container -->
+  <main id="property-listings" class="card-container">
+    <!-- JS will populate property cards here -->
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Rental House Finder. All rights reserved.</p>
+  </footer>
+
+  <script src="index.js"></script>
 </body>
 </html>

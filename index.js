@@ -1,12 +1,19 @@
 document.addEventListener('DOMContentLoaded', async () => {
-    const propertyList = document.getElementById('property-list');
+    const propertyList = document.getElementById('property-listings');
     const searchInput = document.getElementById('search');
+    const darkModeToggle = document.getElementById('dark-mode-toggle');
     let properties = [];
+  
+    // Dark mode toggle
+    darkModeToggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      darkModeToggle.textContent = document.body.classList.contains('dark-mode') ? 'Light Mode' : 'Dark Mode';
+    });
   
     // Fetch properties from API
     async function fetchProperties() {
       try {
-        const response = await fetch('http://localhost:3000/properties');
+        const response = await fetch('http://localhost:8080/properties');
         if (!response.ok) throw new Error('Failed to fetch properties');
         properties = await response.json();
         renderProperties(properties);
